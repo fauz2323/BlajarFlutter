@@ -1,19 +1,24 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MaterialApp(
-      title: "App pertama",
-      home: Home(),
-      debugShowCheckedModeBanner: false,
-    ));
-
-class Home extends StatefulWidget {
-  @override
-  _HomeState createState() => _HomeState();
+main() {
+  runApp(new MaterialApp(
+    home: HalamanAwal(),
+  ));
 }
 
-class _HomeState extends State<Home> {
+class HalamanAwal extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+        body: Container(
+      color: Colors.blue[200],
+      width: 200.0,
+      height: 100.0,
+      child: Center(
+          child: Text(
+        "data",
+        style: TextStyle(color: Colors.white12),
+      )),
+    ));
   }
 }
